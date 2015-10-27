@@ -589,8 +589,8 @@ $default-font: Helvetica, Arial, sans-serif;
                 text-align: justify;
             }
         }
-    } //page _about
-    
+    } //page_about
+   
     
     .page_object
     {
@@ -961,6 +961,11 @@ $default-font: Helvetica, Arial, sans-serif;
                             box-sizing: border-box;
                         }
                         
+                        input[type="file"]
+                        {
+                            padding-top: 15px;
+                        }
+                        
                         textarea
                         {
                             width: 100%;
@@ -1007,6 +1012,368 @@ $default-font: Helvetica, Arial, sans-serif;
             }
         }
     } //page_admin_main
+    
+    
+    .page_admin_about
+    {
+        width: 100%;
+        clear: both;
+        
+        img.background_image
+        {
+            width: 100%;
+            display: block;
+            margin-top: 60px;
+        }
+        
+        h1
+        {
+            @include reset_margin_and_padding;
+            
+            width: 100%;
+            height: 100px;
+            font-family: $default-font;
+            font-size: 20px;
+            line-height: 100px;
+            text-align: center;
+            color: #808080;
+            background-color: $background-color-2;  
+            
+            a
+            {
+                width: 100px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                padding: 10px;
+                font-family: $default-font;
+                font-size: 14px;
+                font-weight: bold;
+                text-decoration: none;
+                text-align: center;
+                color: #fff;
+                background-color: #13a89e;
+                transition: 0.5s;
+                
+                &:hover
+                {
+                    background-color: #0f9188;
+                }
+            }
+        }
+        
+        .content
+        {
+            width: 100%;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background-color: #f2f2f2;
+            
+            p
+            {
+                width: 60%;
+                margin-bottom: 25px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: $default-font;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #666666;
+            }
+            
+            p.v2
+            {
+                text-align: justify;
+            }
+        }
+    } //page_admin_about
+    
+    
+    
+    .page_admin_libary
+    {
+        width: 100%;
+        margin-top: 60px;
+        clear: both;
+        
+        .content
+        {
+            width: 100%;
+            clear: both;
+            
+            .row
+            {
+                @include reset_margin_and_padding;
+                
+                .col-md-2
+                {
+                    background-color: #f2f2f2;
+                    padding-bottom: 50px;
+                    
+                    a
+                    {
+                        float: left;
+                        width: 100%;
+                        margin-top: 50px;
+                        padding-left: 25px;
+                        font-family: $default-font;
+                        font-size: 16px;
+                        line-height: 16px;
+                        text-decoration: none;
+                        color: #333333;
+                        box-sizing: border-box;
+                        transition: 0.5s;
+                    
+                        &:hover, &.active
+                        {
+                            color: #13a89e;
+                        }
+                    }
+                        
+                    a.dodaj_material
+                    {
+                        float: left;
+                        width: 100%;
+                        height: 50px;
+                        padding: 0px;
+                        font-family: $default-font;
+                        font-size: 20px;
+                        line-height: 50px;
+                        font-weight: bold;
+                        text-decoration: none;
+                        text-align: center;
+                        color: #fff;
+                        background-color: #13a89e;
+                        transition: 0.5s;
+
+                        &:hover, &.active
+                        {
+                            background-color: #0f9188;
+                        }
+                    }
+                }
+                
+                .col-md-10
+                {
+                    margin-top: 50px;
+                    margin-bottom: 100px;
+                    
+                    .col-md-12
+                    {
+                        .object
+                        {
+                            float: left;
+                            width: 100%;
+                            border-top: 1px solid #f2f2f2;
+                            border-bottom: 1px solid #f2f2f2;
+                            
+                            .col-md-1
+                            {
+                                @include reset_margin_and_padding;
+                        
+                                float: left;
+                                margin-top: 10px;
+                                margin-bottom: 10px;
+                                
+                                img
+                                {
+                                    width: 100%;
+                                    min-height: 100px;
+                                    display: block;
+                                    margin-top: 10px;
+                                }
+                            }
+                            
+                            .col-md-3
+                            {
+                                margin-top: 20px;
+                                margin-bottom: 10px;
+                                
+                                a 
+                                {
+                                    float: left;
+                                    width: 100%;
+                                    height: 100px;
+                                    font-family: $default-font;
+                                    font-size: 16px;
+                                    line-height: 100px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    color: #000;
+                                    overflow: hidden;
+                                    
+                                    &:hover
+                                    {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                            
+                            .col-md-5
+                            {
+                                margin-top: 20px;
+                                margin-bottom: 10px;
+                                
+                                a
+                                {
+                                    float: right;
+                                    width: 100px;
+                                    height: 40px;
+                                    margin-top: 30px;
+                                    margin-bottom: 30px;
+                                    margin-right: 20px;
+                                    font-family: $default-font;
+                                    font-size: 13px;
+                                    line-height: 40px;
+                                    font-weight: bold;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    color: #13a89e;
+                                    border: 1px solid #13a89e;
+                                    border-radius: 6px;
+                                    transition: 0.5s;
+
+                                    &:hover, &.active
+                                    {
+                                        color: #fff;
+                                        background-color: #0f9188;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } //page_admin_libary
+    
+    
+    .page_admin_register
+    {
+        width: 100%;
+        clear: both;
+        margin-top: 60px;
+        
+        .row
+        {
+            .col-md-8
+            {
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+                
+                h1
+                {
+                    @include reset_margin_and_padding;
+
+                    width: 90%;
+                    height: 30px;
+                    margin-top: 100px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-family: $default-font;
+                    font-size: 30px;
+                    line-height: 30px;
+                    color: #999999;
+                }
+                
+                form
+                {
+                    width: 90%;
+                    margin-top: 50px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                    .form-group
+                    {
+                        float: left;
+                        width: 100%;
+                        margin-bottom: 50px;
+                        
+                        label
+                        {
+                            width: 100%;
+                            font-family: $default-font;
+                            font-size: 16px;
+                            line-height: 16px;
+                            font-weight: bold;
+                            color: #9b9b9b;
+                        }
+                        
+                        input
+                        {
+                            width: 100%;
+                            height: 50px;
+                            margin-top: 10px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            color: #a9a9a9;
+                            background-color: #e6e6e6;
+                            border: none;
+                            box-sizing: border-box;
+                        }
+                        
+                        input[type="file"]
+                        {
+                            padding-top: 15px;
+                        }
+                        
+                        textarea
+                        {
+                            width: 100%;
+                            height: 600px;
+                            margin-top: 10px;
+                            padding: 20px;
+                            color: #a9a9a9;
+                            background-color: #e6e6e6;
+                            border: none;
+                            box-sizing: border-box;
+                        }
+                        
+                        a#register
+                        {
+                            float: left;
+                            width: 100%;
+                            height: 50px;
+                            font-family: $default-font;
+                            font-size: 20px;
+                            line-height: 50px;
+                            font-weight: bold;
+                            text-decoration: none;
+                            text-align: center;
+                            color: #fff;
+                            background-color: #13a89e;
+                            transition: 0.5s;
+
+                            &:hover, &.active
+                            {
+                                background-color: #0f9188;
+                            }
+                        }
+                        
+                        p
+                        {
+                            width: 100%;
+                            height: 14px;
+                            font-family: $default-font;
+                            font-size: 14px;
+                            line-height: 14px;
+                            text-align: center;
+                            font-weight: bold;
+                            color: #13a89e;
+                            
+                            a
+                            {
+                                color: #13a89e;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } //page_admin_register
     
     
     

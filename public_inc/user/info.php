@@ -4,17 +4,17 @@
 
 	<meta charset="utf-8">
     <title>Informacja - USERNAME - elearn</title>
-    <link rel="icon" href="../public_img/favicon.ico" >
+    <link rel="icon" href="../../public_img/favicon.ico" >
     <meta name="description" content="">
     <meta name="keywords" content="">								
     
-    <link href="../public_css/reset.css" rel="stylesheet">
-    <link href="../public_css/bootstrap.css" rel="stylesheet">
-    <link href="../public_css/lay.css" rel="stylesheet">
+    <link href="../../public_css/reset.css" rel="stylesheet">
+    <link href="../../public_css/bootstrap.css" rel="stylesheet">
+    <link href="../../public_css/lay.css" rel="stylesheet">
 
     
-    <script src="../public_js/jquery.js"></script>
-    <script src="../public_js/bootstrap.js"></script>
+    <script src="../../public_js/jquery.js"></script>
+    <script src="../../public_js/bootstrap.js"></script>
     <!--<script type="text/javascript" src="../public_js/whcookies.js"></script>-->
     
     <script>
@@ -36,11 +36,13 @@
 
 	<header>
     
-    	<a class="logo" href="index.php"></a>
+    	<a class="logo" href="../index.php"></a>
         
         <nav class="right">
         
-        	<a id="show_rwd_menu" href="#"></a>
+        	<a class="action" href="../../koa_cms/wylogowanie.php">Wyloguj</a>
+            
+            <a id="show_rwd_menu" href="#"></a>
         
         </nav>
         
@@ -48,16 +50,16 @@
         
         	<a href="index.php">STRONA GŁÓWNA</a>
             <a href="biblioteka.php">BIBLIOTEKA</a>
-            <a href="kontakt.php">KONTAKT</a>
+            <a href="subskrybenci.php">SUBSKRYBENCI</a>
         
         </nav>
     
     </header>
     
     
-    <div class="page_about">
+    <div class="page_admin_about">
         
-        <img class="background_image" src="../public_img/default_background_image.png" alt="">
+        <img class="background_image" src="../../public_img/default_background_image.png" alt="">
     
     	<h1>INFORMACJA</h1>
         
@@ -74,7 +76,7 @@
     
     	<p class="copyright">&copy; 2015 elearn</p>
         
-        <a class="logo" href="../index.php" target="_blank"></a>
+        <a class="logo" href="../../index.php" target="_blank"></a>
     
     </footer>
 
